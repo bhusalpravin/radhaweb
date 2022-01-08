@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shree Radha Fashion model1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+      <div class="circle"></div>
+      <div class="circle1"></div>
+        <header>
+            <a href ="index.html" class="logo"><img src="logo.png"></a>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="whatwedo.html">What we Do?</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+
+            </ul>
+
+        </header>
+        <div class="content">
+          <div class="textbox">
+            <h2>It's not only the clothes<br>It's<span> Trend</span></h2>
+            <p>............</p>
+          <a <href="#">Learn More</a>
+          </div>
+          <div class="imgbox">
+            <img src="img1.png" class="srfs">
+
+        </div>
+        </div>
+
+        <ul class="thumb">
+        <li><img  src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('skyblue')"></li>
+        <li><img  src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('Tomato')"></li>
+        <li><img  src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('indianred')"></li>
+        <li><img  src="thumb4.png" onclick="imgSlider('img4.png');changeCircleColor('#8000ff')"></li>
+        </ul>
+        <ul class="sci">
+          <li><a href="#"><img  src="facebook.png"><a/></li>
+          <li><a href="#"><img  src="instagram.png"></a></li>
+          <li><a href="#"><img  src="tiktok.png"></a></li>
+        </ul>
+
+
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+      document.querySelector('.srfs').src = anything;
+    }
+    function changeCircleColor(color){
+      const circle = document.querySelector('.circle')
+      circle.style.background = color;
+    }
+    </script>
+
+
+
+</body>
+</html>
